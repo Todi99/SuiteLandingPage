@@ -1,21 +1,67 @@
 $color1: #172339
+$color2: #49566d
 $color4: #faf8f6
 
 body
     background-color: $color4
-
+    font-family: sans-serif
+span
+    font-weight: bolder
+a
+    text-decoration: none
+    padding: 10px 15px
+    border-radius: 5px
 .hbar
     display: flex
     justify-content: space-between
     align-items: center
     padding: 10px 50px
+    margin: 0 0 50px
     a
         border: 1px solid $color1
-        padding: 10px 15px
-        text-decoration: none
+
         color: $color1
     img
         height: fit-content
 .hero
     display: flex
     justify-content: space-between
+    div
+        position: relative
+        margin: 50px 50px
+        display: flex
+        flex-direction: column
+
+        &:first-of-type
+            max-width: 500px
+            h1
+
+                font-size: 3.5em
+
+            img
+                position: absolute
+                left: 45%
+            p
+                width: 60%
+                line-height: 1.75em
+                color: $color2
+            a
+                color: $color4
+                background-color: $color1
+                width: max-content
+        &:last-of-type
+            width: 15%
+            display: flex
+            justify-content: center
+            p
+                font-variant: all-small-caps
+                color: $color2
+                span
+                    font-size: 2em
+                    display: block
+                    color: $color1
+
+    & > img
+        position: absolute
+        left: 40%
+        z-index: -10
