@@ -5,6 +5,8 @@ $color4: #faf8f6
 body
     background-color: $color4
     font-family: sans-serif
+    padding: 10px
+
 span
     font-weight: bolder
 a
@@ -26,6 +28,8 @@ a
 .hero
     display: flex
     justify-content: space-between
+    margin-bottom: 250px
+
     div
         position: relative
         margin: 50px 50px
@@ -65,3 +69,19 @@ a
         position: absolute
         left: 40%
         z-index: -10
+.testimonial
+    background-color: $color1
+    display: flex
+    border-radius: 10px
+    max-width: 1109px
+    margin: auto
+    justify-content: space-around
+    img
+        transform: scale(1.15) translateY(-5.6%)
+        &:first-of-type
+            position: absolute
+            transform: translateX(-20%)
+
+    div
+        &:last-of-type
+            max-width: 400px
