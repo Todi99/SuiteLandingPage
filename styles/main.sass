@@ -1,11 +1,13 @@
 $color1: #172339
 $color2: #49566d
+$color3: #f3ede7
 $color4: #faf8f6
 
 body
     background-color: $color4
     font-family: sans-serif
-    padding: 10px
+    margin: 0
+    padding: 0
 
 span
     font-weight: bolder
@@ -83,6 +85,7 @@ h2
         &:first-of-type
             position: absolute
             transform: translateX(-20%)
+            height: 399px
     div
         &:last-of-type
             max-width: 300px
@@ -97,3 +100,10 @@ h2
                 line-height: 1em
         span
             color: $color4
+.footer
+    background-color: $color3
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: -10
+    height: 100px
