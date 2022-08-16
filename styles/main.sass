@@ -2,12 +2,16 @@ $color1: #172339
 $color2: #49566d
 $color3: #f3ede7
 $color4: #faf8f6
+$color5: #a060ff
+$color6: #cb30e3
+$color7: #ffa84e
 
 body
     background-color: $color4
     font-family: sans-serif
     margin: 0
     padding: 0
+    transition: .5s ease-out
 
 span
     font-weight: bolder
@@ -27,6 +31,11 @@ h2
         border: 1px solid $color1
 
         color: $color1
+        &:hover
+            color: $color4
+            background-color: $color1
+            transition: 250ms ease-out
+
     img
         height: fit-content
 .hero
@@ -57,6 +66,10 @@ h2
                 color: $color4
                 background-color: $color1
                 width: max-content
+                &:hover
+                    background: linear-gradient(45deg, $color5,$color6,$color7)
+                    background-color: none
+
         &:last-of-type
             width: 15%
             display: flex
@@ -100,6 +113,7 @@ h2
                 line-height: 1em
         span
             color: $color4
+            font-variant: all-small-caps
 .footer
     background-color: $color3
     display: flex
